@@ -7,6 +7,17 @@ body,html {
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
 }
+
+#navbar{
+  transition: all 0.3s ease;
+  padding: 20px 0px;
+}
+
+#navbar.shrink{
+  padding: 5px 0px;
+  background-color: #f8f8f8 !important;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+}
 ::selection {
     background-color: var(--marrom-claro);
     color: #fff;
@@ -17,9 +28,7 @@ span.navbar-toggler-icon {
   padding: 10px;
   border-radius: 10px;
 }
-.nav-link>a{
-  background-color: red;
-}
+
 .bi.bi-moon-stars {
   cursor: pointer;
   color:var(--marrom-claro);
@@ -27,6 +36,7 @@ span.navbar-toggler-icon {
   border: 1px solid #d1d1d1;
   padding:2px;
   border-radius:50%;
+  cursor: pointer;
 }
 ::-webkit-scrollbar{
 	width:10px;
@@ -45,15 +55,28 @@ height: 100%;
 padding-top: 50px;
 padding-bottom: 50px;
 }
-
+.offcanvas-title{
+  background: #534630;
+  padding:10px;
+  border-radius: 30px;
+}
 #produtos {
 width: 100%;
 height: 100%;
 padding-top: 50px;
 padding-bottom: 50px;
 }
+.modal-title{
+  background: var(--marrom-claro);
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #fff;
+}
 .title-produtos {
 margin-top: 2rem;
+}
+.modal-content{
+  box-shadow: 0px 2px 2px #00000080;
 }
 .title-servicos {
   margin-top: 2rem;
@@ -182,7 +205,8 @@ input[type="checkbox"]:focus {
   color: black;
   border: none;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
+  padding: 8px;
 }
 
 .botao-padrao:hover {
