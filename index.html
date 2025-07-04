@@ -24,9 +24,9 @@
 </head>
 <body data-bs-theme="light">
   <header>
-    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top py-4 shadow" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#inicio"><img src="assets/logo.webp" alt="Logo da cafeteria Aromas do Café"></a>
+        <a class="navbar-brand" href="#inicio"><img src="assets/logo.webp" alt="Logo da cafeteria Aromas do Café" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -355,21 +355,25 @@
         </div>
       </div>
     </div>
-
   </div>
   </div>
   </div>
-  <!-- Modal 1 -->
+  <div id="menu">
+    <!-- Modal 1 -->
   <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés tradicionais</h2>
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Café tradicional</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <img src="assets/produtos-cafe-tradicional.webp" class="w-100" alt="Xícara de café preto">
           <p>O Aromas do Café é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado.</p>
+          <p>valor: R$6,00</p>
+          <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="cafe tradicional" data-price="6">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
         </div>
         <div class="modal-footer mx-auto">
         </div>
@@ -381,13 +385,17 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés especiais</h2>
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Capuccino</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <img src="assets/produtos-cafe-especial.webp" class="w-100" alt="Xícara de café expresso">
           <p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
             selecionados de alta qualidade e técnicas de preparo precisas.</p>
+            <p>valor: R$7,00</p>
+            <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="capuccino" data-price="7">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
         </div>
         <div class="modal-footer mx-auto">
         </div>
@@ -405,6 +413,10 @@
       <div class="modal-body">
         <img src="assets/produtos-vitaminas.webp" class="w-100" alt="smoothies e vitaminas" title="sucos">
         <p>Nossos smoothies e vitaminas são personalizados com seu nome, e as frutas é você quem <strong>escolhe</strong></p>
+        <p>valor: R$4,00</p>
+        <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="pao-de-queijo" data-price="4">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
       </div>
       <div class="modal-footer mx-auto">
       </div>
@@ -416,12 +428,16 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Pães e Focaccias</h2>
+        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Pães Focaccias</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <img src="assets/produtos-paes.webp" class="w-100" alt="pães" title="pães">
         <p>Temos uma variedade e Pães. para que seu café da manhã seja incrível!</p>
+        <p>valor 1kg: R$10</p>
+        <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="paes" data-price="10">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
       </div>
       <div class="modal-footer mx-auto">
       </div>
@@ -439,6 +455,10 @@
       <div class="modal-body">
         <img src="assets/produtos-doces.webp" class="w-100" alt="bolo de morango" title="bolo de morango">
         <p>Temos diversos tipos de bolos e doces para você se exprimentar, e ter mais energia no seu dia</p>
+        <p>valor: R$50,00</p>
+        <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="bolo-aniversario" data-price="50">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
       </div>
       <div class="modal-footer mx-auto">
       </div>
@@ -455,13 +475,18 @@
       </div>
       <div class="modal-body">
         <img src="assets/produtos-salgados.webp" class="w-100" alt="bolo de morango" title="bolo de morango">
-        <p>Além de tortas temos diversos salgados para seu café da tarde o em qualquer momenro do dia</p>
+        <p>Além de tortas temos diversos salgados para seu café da tarde o em qualquer momento do dia</p>
+        <p>Valor: 6,00</p>
+        <div class="price">
+            <button class="botao-padrao add-to-cart" data-name="salgados" data-price="6">Adicionar <i class="fa-solid fa-bag-shopping"></i></button>
+          </div>
       </div>
       <div class="modal-footer mx-auto">
       </div>
     </div>
   </div>
 </div>
+  </div>
 <!--footer-->
 <footer class="text-center">
   <section class="container p-4 pb-0">
