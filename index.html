@@ -487,6 +487,23 @@
   </div>
 </div>
   </div>
+  <div class="modal-cart" id="cart-modal">
+    <div class="cart align-items-center justify-content-between">
+    <h2>Meu carrinho</h2>
+    <div id="cart-items"></div>
+    <p>Total: <span id="cart-total">0.00</span></p>
+    <p>Endereço de entrega:</p>
+    <input type="text" placeholder="Digite seu endereço..." id="address">
+    <p class="text-danger" id="address-warn">Digite seu endereço completo!</p>
+    <div class="cart-btn align-items-center justify-content-between">
+      <button id="close-btn" class="checkout">Fechar</button>
+      <button id="checkout-btn" class="checkout">Finalizar pedido</button>
+    </div>
+  </div>
+  </div>
+<div class="footer-cart text-center" id="cart-modal">
+  <button id="cart-btn"><span id="cart-count">(0 veja meu carrinho) <i class="bi bi-cart-plus-fill"></i></span></button>
+</div>
 <!--footer-->
 <footer class="text-center">
   <section class="container p-4 pb-0">
