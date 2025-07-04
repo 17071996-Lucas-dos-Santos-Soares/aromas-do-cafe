@@ -1,0 +1,371 @@
+body,html {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+::selection {
+    background-color: var(--marrom-claro);
+    color: #fff;
+}
+span.navbar-toggler-icon {
+  background-color: #cfe2ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-link>a{
+  background-color: red;
+}
+.bi.bi-moon-stars {
+  cursor: pointer;
+  color:var(--marrom-claro);
+  font-size:16px;
+  border: 1px solid #d1d1d1;
+  padding:2px;
+  border-radius:50%;
+}
+::-webkit-scrollbar{
+	width:10px;
+}
+::-webkit-scrollbar-thumb{
+	width:10px;
+	background:var(--marrom-claro);
+	border-radius:30px;
+}
+#servicos {
+width: 100%;
+height: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+#produtos {
+width: 100%;
+height: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.title-produtos {
+margin-top: 2rem;
+}
+.title-servicos {
+  margin-top: 2rem;
+}
+.title-1 {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  text-align: left;
+  font-size: 35px;
+  margin-left: 20px;
+}
+.paragraph1 {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.title-2 {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+.paragraph-2 {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.main-btn{
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding:0px 15px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  border-radius: 30px;
+  color: #fff;
+}
+.main-btn:hover {
+  transition: all .2s ease-in-out;
+  background-color: var(--marrom-escuro);
+}
+.main-btn i {
+  color: #fff;
+}
+.main-btn i:hover {
+  transition: all.2s ease-in-out;
+  color: #25d366;
+}
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+.card{
+  box-shadow: var(--marrom-escuro) 0px 5px 15px;
+  margin: 10px;
+}
+
+.card-text{
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: light;
+}
+
+.card-title {
+  text-align: left;
+}
+.offcanvas-title {
+  color: #E6E0D6;
+}
+.accordion-body {
+  border-radius: 15px;
+}
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+.banner-1 {
+  background-image: url(../assets/fundo-home.webp);
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left,center;
+  background-attachment: fixed;
+}
+.banners-titulo {
+  --bs-bg-opacity: .2;
+}
+
+.banner-2{
+  background-image: url(../assets/fundo-cafeteria.webp);
+}
+
+.banner-3{
+  background-image: url(../assets/banner-3.png);
+}
+.banners {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: left, center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
+.botao-padrao {
+  background-color: var(--marrom-claro);
+  color: black;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.botao-padrao:hover {
+  transition: all .2s ease-in-out;
+  color: #E6E0D6;
+  background-color: var(--marrom-escuro);
+}
+.card-back {
+  background-image: url(../assets/fundo-bistrô.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-back-1 {
+  background-image: url(../assets/fundo-buffet.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-back-2 {
+  background-image: url(../assets/fundo-delivery.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.input-range::-webkit-slider-thumb{
+ background-color: var(--marrom-claro);
+}
+.icons i{
+  color: #fff;
+  width: 30px;
+  cursor: pointer;
+}
+.title-3 {
+  font-size: 28px;
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+}
+.icons i:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+  color: #E6E0D6;
+}
+.accordion-button {
+  text-align: center;
+}
+[data-bs-theme="dark"] {
+  .nav-link, .card-body, .offcanvas, .accordion, .btn {
+    --bs-nav-link-color:#fff;
+    --bs-card-color:#fff;
+    --bs-offcanvas-color: #fff;
+    --bs-body-color: #fff;
+    --bs-btn-color: #fff;
+  }
+}
+#contato{
+  width: 100%;
+  height:600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+form {
+  margin-top: 40px;
+}
+footer {
+  background-color: var(--marrom-escuro);
+  color: #fff;
+}
+footer p {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+}
+
+/* responsividade tablet */
+@media(max-width:988px) {
+  .offcanvas-header{
+    background: #765833;
+  }
+  .offcanvas-body{
+    border-bottom-right-radius: 30px;
+  }
+  #servicos {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+  .banner-1 {
+    background-image: url(../assets/fundo-home-mobile.jpg);
+  }
+  .banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .banner-2{
+    background-image: url(../assets/fundo-cafeteria-mobile.webp);
+  }
+
+  .banner-3{
+  background-image: url(../assets/fundo-sobre-mobile.webp);
+}
+
+.card-back {
+  background-image: url(../assets/fundo-bistro-mobile.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  .card-back-1 {
+  background-image: url(../assets/fundo-buffet-mobile.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  .card-back-2 {
+  background-image: url(../assets/atendimento.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banners-titulo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  .title-1{
+    font-family: "Poetsen One", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+    margin-top: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+  }
+  .paragraph1 {
+    font-family: "Barlow", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 20px;
+    z-index: 1;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+  }
+  .title-2 {
+    font-family: "Poetsen One", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .paragraph-2 p {
+    font-family: "Barlow", sans-serif;
+    color: #fff;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .main-btn{
+    margin-left: 6rem;
+    background: transparent;
+    border: 1px solid #fff;
+    padding:0px 15px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-radius: 30px;
+    color: #fff;
+  }
+  .main-btn:hover {
+    transition: all .2s ease-in-out;
+    background-color: var(--marrom-escuro);
+  }
+  .main-btn i {
+    color: #fff;
+  }
+  .main-btn i:hover {
+    transition: all.2s ease-in-out;
+    color: #25d366;
+  }
+}
