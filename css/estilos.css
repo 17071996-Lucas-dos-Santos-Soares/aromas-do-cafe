@@ -280,7 +280,64 @@ footer p {
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
 }
+.footer-cart{
+  width: 100%;
+  background-color: #8d5b3c;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  bottom: 0px;
+  position: fixed;
+  z-index: 40;
+}
+.footer-cart button{
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+.modal-cart{
+  width: 100%;
+  border-radius: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 200px;
+  left: 0px;
+  z-index: 9999;
+}
 
+.cart{
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: #ffffffd7;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 50px;
+  box-shadow: #8C5B3B 2px 5px 15px;
+}
+
+.cart h2{
+  font-size: 18px;
+  text-align: center;
+}
+.cart input{
+  outline: none;
+  border-radius: 30px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.cart p.text-danger{
+  display: none;
+}
+.checkout,button{
+  background: #8C5B3B;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  padding:8px;
+  margin-top: 10px;
+  box-shadow: #00000059 0px 5px 15px;
+}
 /* responsividade tablet */
 @media(max-width:988px) {
   .offcanvas-header{
